@@ -1,4 +1,4 @@
-// Kryszard's PD2 Loot Filter ver 1.6.5 edited by qLofty
+// Kryszard's PD2 Loot Filter ver 1.6.5 edited by qLofty 1.0
 //
 // twitch.tv/kryszard
 //
@@ -151,7 +151,7 @@ ItemDisplay[RUNE>25]: %BORDER-62%%NL%%GREEN%|%PURPLE%-%GREEN%| %RUNENAME% %PURPL
 
 //All Charms
 ItemDisplay[cm2 MAG !ID]: %DOT-9B%%NL%%TAN%*%BLUE% %NAME%%ORANGE% i%ILVL% %TAN%*
-ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%PURPLE%*%BLUE%   %NAME%%ORANGE% i%ILVL% %PURPLE%*
+ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%PURPLE%*  %BLUE%%NAME%%ORANGE% i%ILVL%  %PURPLE%*
 ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %PX-68%%NAME% %ORANGE% i%ILVL%
 
 //Good Charms
