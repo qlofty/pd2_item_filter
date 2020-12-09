@@ -730,7 +730,7 @@ ItemDisplay[WEAPON NORM SET ID]: %NAME%{%GREEN%This Item %WHITE%+ %ORANGE%Ral %W
 ItemDisplay[WEAPON EXC SET ID]: %NAME%{%GREEN%This Item %WHITE%+ %ORANGE%Lum %WHITE%+ %ORANGE%Pul %WHITE%+ Perf %GREEN%O%NL%%TAN%Note%WHITE%: Upgrading Recipe:}
 
 //Always show me those items
-ItemDisplay[UNI OR SET OR RW OR CRAFT OR RARE]: %NAME%%DOT-0D%
+ItemDisplay[UNI OR SET OR RW OR CRAFT]: %NAME%%DOT-0D%
 
 //Show me every identified item
 ItemDisplay[(ARMOR OR WEAPON) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%%DOT-0D%
