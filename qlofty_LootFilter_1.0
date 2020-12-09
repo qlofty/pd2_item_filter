@@ -54,11 +54,7 @@ ItemDisplay[(aqv OR cqv) NMAG CLVL>6]:
 //Choking, Exploding, Fulminating, Oil, Rancid, Strangling
 ItemDisplay[(gpm OR opm OR opl OR ops OR gps OR gpl) CLVL>23]:
 
-// +----------------------------------------------------------------------------+
-// |                                                                            |
-// |     [GEMS] Gems                                                            |
-// |                                                                            |
-// +----------------------------------------------------------------------------+
+//GEMS
 // ------------------------------------------------------------------------------
 // [GEMA] Gems Master
 // ------------------------------------------------------------------------------
@@ -149,10 +145,80 @@ ItemDisplay[RUNE=15 OR RUNE=16 OR RUNE=17 OR RUNE=18 OR RUNE=19]: %PX-62%%NL%%BL
 ItemDisplay[RUNE>19 AND RUNE<26]: %DOT-62%%NL%%BLUE%+%RED%* %RUNENAME% %RED%Rune %WHITE%[%RED%%RUNENUM%%WHITE%]%RED% *%BLUE%+%CONTINUE%
 ItemDisplay[RUNE>25]: %BORDER-62%%NL%%GREEN%|%PURPLE%-%GREEN%| %RUNENAME% %PURPLE%Rune %WHITE%[%GREEN%%RUNENUM%%WHITE%]%GREEN% |%PURPLE%-%GREEN%|%CONTINUE%
 
+ItemDisplay[r01]: %NAME%{%TAN%3 El + Key = Eld%NL%} // El Rune
+ItemDisplay[r01s]: %NAME%{%TAN%3 El + Key = Eld%NL%%NL%%WHITE%All: +1 Light Radius%NL%Shields: +15 Defense%NL%Armor/Helms: +15 Defense%NL%Weapons: +50 Attack Rating%NL%} // El Rune
+ItemDisplay[r02]: %NAME%{%TAN%3 Eld + Key = Tir%NL%} // Eld Rune
+ItemDisplay[r02s]: %NAME%{%TAN%3 Eld + Key = Tir%NL%%NL%%WHITE%Shields: +7% Block%NL%Armor/Helms: -15% Stam Drain%NL%Weapons: +75% Dmg & +50 Attack Rating vs Undead%NL%} // Eld Rune
+ItemDisplay[r03]: %NAME%{%TAN%3 Tir + Key = Nef%NL%} // Tir Rune
+ItemDisplay[r03s]: %NAME%{%TAN%3 Tir + Key = Nef%NL%%NL%%WHITE%Shields: +2 Mana Per Kill%NL%Armor/Helms: +2 Mana Per Kill%NL%Weapons: +2 Mana Per Kill%NL%} // Tir Rune
+ItemDisplay[r04]: %NAME%{%TAN%3 Nef + Key = Eth%NL%} // Nef Rune
+ItemDisplay[r04s]: %NAME%{%TAN%3 Nef + Key = Eth%NL%%NL%%WHITE%Shields: +30 Defense vs Missile%NL%Armor/Helms: +30 Defense vs Missile%NL%Weapons: Knockback%NL%} // Nef Rune
+ItemDisplay[r05]: %NAME%{%TAN%3 Eth + Key = Ith%NL%} // Eth Rune
+ItemDisplay[r05s]: %NAME%{%TAN%3 Eth + Key = Ith%NL%%NL%%WHITE%Shields: Regen Mana 15%%NL%Armor/Helms: Regen Mana 15%%NL%Weapons: -25% Target Defense%NL%} // Eth Rune
+ItemDisplay[r06]: %NAME%{%TAN%3 Ith + Key = Tal%NL%} // Ith Rune
+ItemDisplay[r06s]: %NAME%{%TAN%3 Ith + Key = Tal%NL%%NL%%WHITE%Shields: 15% Dmg Taken Gained as Mana%NL%Armor/Helms: 15% Dmg Taken Gained as Mana%NL%Weapons: +9 Max Dmg%NL%} // Ith Rune
+ItemDisplay[r07]: %NAME%{%TAN%3 Tal + Key = Ral%NL%} // Tal Rune
+ItemDisplay[r07s]: %NAME%{%TAN%3 Tal + Key = Ral%NL%%NL%%WHITE%Shields: Poison Resist +35%%NL%Armor/Helms: Poison Resist +30%%NL%Weapons: +75 poison damage over 5 seconds%NL%} // Tal Rune
+ItemDisplay[r08]: %NAME%{%TAN%3 Ral + Key = Ort%NL%} // Ral Rune
+ItemDisplay[r08s]: %NAME%{%TAN%3 Ral + Key = Ort%NL%%NL%%WHITE%Shields: Fire Resist +35%%NL%Armor/Helms: Fire Resist +30%%NL%Weapons: Adds 5-30 fire damage%NL%} // Ral Rune
+ItemDisplay[r09]: %NAME%{%TAN%3 Ort + Key = Thul%NL%} // Ort Rune
+ItemDisplay[r09s]: %NAME%{%TAN%3 Ort + Key = Thul%NL%%NL%%WHITE%Shields: Lightning Resist +35%%NL%Armor/Helms: Lightning Resist +30%%NL%Weapons: Adds 1-50 lightning dmg%NL%} // Ort Rune
+ItemDisplay[r10]: %NAME%{%TAN%3 Thul + Key = Amn%NL%} // Thul Rune
+ItemDisplay[r10s]: %NAME%{%TAN%3 Thul + Key = Amn%NL%%NL%%WHITE%Shields: Cold Resist +35%%NL%Armor/Helms: Cold Resist +30%%NL%Weapons: Adds 3-14 cold damage%NL%} // Thul Rune
+ItemDisplay[r11]: %NAME%{%TAN%3 Amn + Key = Sol%NL%} // Amn Rune
+ItemDisplay[r11s]: %NAME%{%TAN%3 Amn + Key = Sol%NL%%NL%%WHITE%Shields: Attacker Takes Damage of 14%NL%Armor/Helms: Attacker Takes Damage of 14%NL%Weapons: 7% Life steal%NL%} // Stacked Amn Rune
+ItemDisplay[r12]: %NAME%{%TAN%3 Sol + Key = Shael%NL%} // Sol Rune
+ItemDisplay[r12s]: %NAME%{%TAN%3 Sol + Key = Shael%NL%%NL%%WHITE%Shields: Damage Reduced by 7%NL%Armor/Helms: Damage Reduced by 7%NL%Weapons: +9 to Minimum Damage%NL%} // Stacked Sol Rune
+ItemDisplay[r13]: %NAME%{%TAN%3 Shael + Key = Dol%NL%} // Shael Rune
+ItemDisplay[r13s]: %NAME%{%TAN%3 Shael + Key = Dol%NL%%NL%%WHITE%Shields: 20% Faster Block Rate%NL%Armor/Helms: 20% Faster Hit Recovery%NL%Weapons: +20% Attack Speed%NL%} // Stacked Shael Rune
+ItemDisplay[r14]: %NAME%{%TAN%3 Dol + Key = Hel%NL%} // Dol Rune
+ItemDisplay[r14s]: %NAME%{%TAN%3 Dol + Key = Hel%NL%%NL%%WHITE%Shields: Replenish Life +7%NL%Armor/Helms: Replenish Life +7%NL%Weapons: Hit Causes Monster to Flee 25%%NL%} // Stacked Dol Rune
+ItemDisplay[r15]: %NAME%{%TAN%3 Hel + Key = Io%NL%} // Hel Rune
+ItemDisplay[r15s]: %NAME%{%TAN%3 Hel + Key = Io%NL%%NL%%WHITE%Shields: Requirements -15%%NL%Armor/Helms: Requirements -15%%NL%Weapons: Requirements -20%%NL%} // Stacked Hel Rune
+ItemDisplay[r16]: %NAME%{%TAN%3 Io + Key = Lum%NL%} // Io Rune
+ItemDisplay[r16s]: %NAME%{%TAN%3 Io + Key = Lum%NL%%NL%%WHITE%Shields: +10 Vitality%NL%Armor/Helms: +10 Vitality%NL%Weapons: +10 Vitality%NL%} // Stacked Io Rune
+ItemDisplay[r17]: %NAME%{%TAN%3 Lum + Key = Ko%NL%} // Lum Rune
+ItemDisplay[r17s]: %NAME%{%TAN%3 Lum + Key = Ko%NL%%NL%%WHITE%Shields: +10 Energy%NL%Armor/Helms: +10 Energy%NL%Weapons: +10 Energy%NL%} // Stacked Lum Rune
+ItemDisplay[r18]: %NAME%{%TAN%3 Ko + Key = Fal%NL%} // Ko Rune
+ItemDisplay[r18s]: %NAME%{%TAN%3 Ko + Key = Fal%NL%%NL%%WHITE%Shields: +10 Dexterity%NL%Armor/Helms: +10 Dexterity%NL%Weapons: +10 Dexterity%NL%} // Stacked Ko Rune
+ItemDisplay[r19]: %NAME%{%TAN%3 Fal + Key = Lem%NL%} // Fal Rune
+ItemDisplay[r19s]: %NAME%{%TAN%3 Fal + Key = Lem%NL%%NL%%WHITE%Shields: +10 Strength%NL%Armor/Helms: +10 Strength%NL%Weapons: +10 Strength%NL%} // Stacked Fal Rune
+ItemDisplay[r20]: %NAME%{%TAN%3 Lem + Key = Pul%NL%} // Lem Rune
+ItemDisplay[r20s]: %NAME%{%TAN%3 Lem + Key = Pul%NL%%NL%%WHITE%Shields: 50% Extra Gold%NL%Armor/Helms: 50% Extra Gold%NL%Weapons: 75% Extra Gold%NL%} // Stacked Lem Rune
+ItemDisplay[r21]: %NAME%{%TAN%2 Pul + Key = Um%NL%} // Pul Rune
+ItemDisplay[r21s]: %NAME%{%TAN%2 Pul + Key = Um%NL%%NL%%WHITE%Shield: +30% Enhanced Def%NL%Armor/Helm: +30% Enhanced Def%NL%Weapon: +75% Dmg & +100 Attack Rating vs Demon%NL%} // Stacked Pul Rune
+ItemDisplay[r22]: %NAME%{%TAN%2 Um + Key = Mal%NL%} // Um Rune
+ItemDisplay[r22s]: %NAME%{%TAN%2 Um + Key = Mal%NL%%NL%%WHITE%Shields: All Resistances +22%NL%Armor/Helms: All Resistances +15%NL%Weapons: 25% Chance of Open Wounds%NL%} // Stacked Um Rune
+ItemDisplay[r23]: %NAME%{%TAN%2 Mal + Key = Ist%NL%} // Mal Rune
+ItemDisplay[r23s]: %NAME%{%TAN%2 Mal + Key = Ist%NL%%NL%%WHITE%Shield: Magic Damage Reduced by 7%NL%Armor/Helm: Magic Damage Reduced by 7%NL%Weapon: Prevent Monster Heal%NL%} // Stacked Mal Rune
+ItemDisplay[r24]: %NAME%{%TAN%2 Ist + Key = Gul%NL%} // Ist Rune
+ItemDisplay[r24s]: %NAME%{%TAN%2 Ist + Key = Gul%NL%%NL%%WHITE%Shields: +25% Magic Find%NL%Armor/Helms: +25% Magic Find%NL%Weapons: +25% Magic Find%NL%} // Stacked Ist Rune
+ItemDisplay[r25]: %NAME%{%TAN%2 Gul + Key = Vex%NL%} // Gul Rune
+ItemDisplay[r25s]: %NAME%{%TAN%2 Gul + Key = Vex%NL%%NL%%WHITE%Shields: +5% Maximum Poison Res%NL%Armor/Helms: +5% Maximum Poison Res%NL%Weapons: +20% Attack Rating%NL%} // Stacked Gul Rune
+ItemDisplay[r26]: %NAME%{%TAN%2 Vex + Key = Ohm%NL%} // Vex Rune
+ItemDisplay[r26s]: %NAME%{%TAN%2 Vex + Key = Ohm%NL%%NL%%WHITE%Shields: +5% Maximum Fire Resist%NL%Armor/Helms: +5% Maximum Fire Resist%NL%Weapons: 7% Mana Steal%NL%} // Stacked Vex Rune
+ItemDisplay[r27]: %NAME%{%TAN%2 Ohm + Key = Lo%NL%} // Ohm Rune
+ItemDisplay[r27s]: %NAME%{%TAN%2 Ohm + Key = Lo%NL%%NL%%WHITE%Shields: +5% Maximum Cold Resist%NL%Armor/Helms: +5% Maximum Cold Resist%NL%Weapons: +50% Enhanced Damage%NL%} // Stacked Ohm Rune
+ItemDisplay[r28]: %NAME%{%TAN%2 Lo + Key = Sur%NL%} // Lo Rune
+ItemDisplay[r28s]: %NAME%{%TAN%2 Lo + Key = Sur%NL%%NL%%WHITE%Shields: +5% Maximum Light Resist%NL%Armor/Helms: +5% Maximum Light Resist%NL%Weapons: 20% Deadly Strike%NL%} // Stacked Lo Rune
+ItemDisplay[r29]: %NAME%{%TAN%2 Sur + Key = Ber%NL%} // Sur Rune
+ItemDisplay[r29s]: %NAME%{%TAN%2 Sur + Key = Ber%NL%%NL%%WHITE%Shields: +50 Mana%NL%Armor/Helms: Maximum Mana 5%%NL%Weapons: Hit Blinds Target%NL%} // Stacked Sur Rune
+ItemDisplay[r30]: %NAME%{%TAN%2 Ber + Key= Jah%NL%} // Ber Rune
+ItemDisplay[r30s]: %NAME%{%TAN%2 Ber + Key= Jah%NL%%NL%%WHITE%Shields: Damage Reduced by 8%%NL%Armor/Helms: Damage Reduced by 8%%NL%Weapons: 20% Chance of Crushing Blow%NL%} // Stacked Ber Rune
+ItemDisplay[r31]: %NAME%{%TAN%2 Jah + Key = Cham%NL%} // Jah Rune
+ItemDisplay[r31s]: %NAME%{%TAN%2 Jah + Key = Cham%NL%%NL%%WHITE%Shields: +50 Life%NL%Armor/Helms: Increase Maximum Life 5%%NL%Weapons: Ignore Targets Defense%NL%} // Stacked Jah Rune
+ItemDisplay[r32]: %NAME%{%TAN%2 Cham + Key = Zod%NL%} // Cham Rune
+ItemDisplay[r32s]: %NAME%{%TAN%2 Cham + Key = Zod%NL%%NL%%WHITE%Shields: Cannot be Frozen%NL%Armor/Helms: Cannot be Frozen%NL%Weapons: Freezes Target +3%NL%} // Stacked Cham Rune
+ItemDisplay[r33]: %NAME% // Zod Rune
+ItemDisplay[r33s]: %NAME%{%TAN%this bad boy can fit so many freaking els%NL%%ORANGE%Wolfie: %TAN%*slaps rune*%NL%%NL%%WHITE%All Sockets: Indestructible%NL%} // Stacked Zod Rune
+
 //All Charms
-ItemDisplay[cm2 MAG !ID]: %DOT-9B%%NL%%TAN%*%BLUE% %NAME%%ORANGE% i%ILVL% %TAN%*
-ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%PURPLE%*  %BLUE%%NAME%%ORANGE% i%ILVL%  %PURPLE%*
-ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %PX-68%%NAME% %ORANGE% i%ILVL%
+ItemDisplay[cm2 MAG !ID]: %DOT-9B%%NL%%TAN%@%BLUE% %NAME%%ORANGE% i%ILVL% %TAN%@
+ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%PURPLE%@  %BLUE%%NAME%%ORANGE% i%ILVL%  %PURPLE%@
+ItemDisplay[cm1 UNI !ID]: %PX-64%%GOLD%ANNI BABEM!
+ItemDisplay[cm2 UNI !ID]: %PX-64%%GOLD%HELLFIRE TORCH BABEM!
+ItemDisplay[cm3 UNI !ID]: %PX-64%%GOLD%GHEEDS CHARM!
+ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %PX-64%%NAME%
 
 //Good Charms
 ItemDisplay[cm3 (MAXDMG>6 AND LIFE>0)]: %TAN%Max Dmg %RED%Life %BLUE%Grand Charm 
@@ -221,6 +287,7 @@ ItemDisplay[cm3 (TABSK24>0 AND FHR>0)]: %GRAY%Pal %PURPLE%Combat %TAN%Skiller %W
 ItemDisplay[cm3 (TABSK25>0 AND FHR>0)]: %PURPLE%Offensive Auras %TAN%Skiller %WHITE%+ %ORANGE%FHR
 ItemDisplay[cm3 (TABSK26>0 AND FHR>0)]: %PURPLE%Defensive Auras %TAN%Skiller %WHITE%+ %ORANGE%FHR
 ItemDisplay[cm3 (TABSK34>0 AND FHR>0)]: %PURPLE%Warcries %TAN%Skiller %WHITE%+ %ORANGE%FHR
+ItemDisplay[cm3 (TABSK32>0 AND FHR>0)]: %GRAY%Barb %PURPLE%Combat %TAN%Skiller %WHITE%+ %ORANGE%FHR
 ItemDisplay[cm3 (TABSK40>0 AND FHR>0)]: %GRAY%Dru %PURPLE%Summoning %TAN%Skiller %WHITE%+ %ORANGE%FHR
 ItemDisplay[cm3 (TABSK41>0 AND FHR>0)]: %PURPLE%Shape Shifting %TAN%Skiller %WHITE%+ %ORANGE%FHR
 ItemDisplay[cm3 (TABSK42>0 AND FHR>0)]: %PURPLE%Elemental %TAN%Skiller %WHITE%+ %ORANGE%FHR
@@ -239,6 +306,7 @@ ItemDisplay[cm3 (TABSK24>0 AND FRW>0)]: %GRAY%Pal %PURPLE%Combat %TAN%Skiller %W
 ItemDisplay[cm3 (TABSK25>0 AND FRW>0)]: %PURPLE%Offensive Auras %TAN%Skiller %WHITE%+ %ORANGE%frw
 ItemDisplay[cm3 (TABSK26>0 AND FRW>0)]: %PURPLE%Defensive Auras %TAN%Skiller %WHITE%+ %ORANGE%frw
 ItemDisplay[cm3 (TABSK34>0 AND FRW>0)]: %PURPLE%Warcries %TAN%Skiller %WHITE%+ %ORANGE%frw
+ItemDisplay[cm3 (TABSK32>0 AND FRW>0)]: %GRAY%Barb %PURPLE%Combat %TAN%Skiller %WHITE%+ %ORANGE%frw
 ItemDisplay[cm3 (TABSK40>0 AND FRW>0)]: %GRAY%Dru %PURPLE%Summoning %TAN%Skiller %WHITE%+ %ORANGE%frw
 ItemDisplay[cm3 (TABSK41>0 AND FRW>0)]: %PURPLE%Shape Shifting %TAN%Skiller %WHITE%+ %ORANGE%frw
 ItemDisplay[cm3 (TABSK42>0 AND FRW>0)]: %PURPLE%Elemental %TAN%Skiller %WHITE%+ %ORANGE%frw
@@ -257,6 +325,7 @@ ItemDisplay[cm3 (TABSK24>0 AND LIFE>0)]: %GRAY%Pal %PURPLE%Combat %TAN%Skiller %
 ItemDisplay[cm3 (TABSK25>0 AND LIFE>0)]: %PURPLE%Offensive Auras %TAN%Skiller %WHITE%+ %RED%Life
 ItemDisplay[cm3 (TABSK26>0 AND LIFE>0)]: %PURPLE%Defensive Auras %TAN%Skiller %WHITE%+ %RED%Life
 ItemDisplay[cm3 (TABSK34>0 AND LIFE>0)]: %PURPLE%Warcries %TAN%Skiller %WHITE%+ %RED%Life
+ItemDisplay[cm3 (TABSK32>0 AND LIFE>0)]: %GRAY%Barb %PURPLE%Combat %TAN%Skiller %WHITE%+ %RED%Life
 ItemDisplay[cm3 (TABSK40>0 AND LIFE>0)]: %GRAY%Dru %PURPLE%Summoning %TAN%Skiller %WHITE%+ %RED%Life
 ItemDisplay[cm3 (TABSK41>0 AND LIFE>0)]: %PURPLE%Shape Shifting %TAN%Skiller %WHITE%+ %RED%Life
 ItemDisplay[cm3 (TABSK42>0 AND LIFE>0)]: %PURPLE%Elemental %TAN%Skiller %WHITE%+ %RED%Life
@@ -274,6 +343,7 @@ ItemDisplay[cm3 TABSK18>0]: %GRAY%Nec %PURPLE%Summoning Spells %TAN%Skiller
 ItemDisplay[cm3 TABSK24>0]: %GRAY%Pal %PURPLE%Combat %TAN%Skiller
 ItemDisplay[cm3 TABSK25>0]: %PURPLE%Offensive Auras %TAN%Skiller
 ItemDisplay[cm3 TABSK26>0]: %PURPLE%Defensive Auras %TAN%Skiller
+ItemDisplay[cm3 TABSK32>0]: %GRAY%Barb %PURPLE%Combat %TAN%Skiller
 ItemDisplay[cm3 TABSK34>0]: %PURPLE%Warcries %TAN%Skiller
 ItemDisplay[cm3 TABSK40>0]: %GRAY%Dru %PURPLE%Summoning %TAN%Skiller
 ItemDisplay[cm3 TABSK41>0]: %PURPLE%Shape Shifting %TAN%Skiller
@@ -308,7 +378,7 @@ ItemDisplay[(nee OR pa9 OR nea OR uts OR uow OR xsh OR xow OR pae OR nef) UNI !I
 ItemDisplay[(7ws OR 72a OR 7fl OR 7kr OR 7cr OR 7gm OR 9tw OR oba OR ama OR 6ws OR obc OR 7lw OR amf OR 7wh) UNI !ID]: %DOT-68%%NL%%YELLOW%*%TAN%*%GRAY%*   %GOLD%%NAME%%GRAY%   *%TAN%*%YELLOW%*
 
 //Rainbow Facet
-ItemDisplay[jew UNI !ID]: %BORDER-68%%NL%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w     %GOLD%%NAME%%PURPLE%     r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w%NL%%GREEN%pick me up
+ItemDisplay[jew UNI !ID]: %BORDER-68%%NL%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w    %GOLD%%NAME%%PURPLE%    r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w%NL%%GREEN%TIDDIES
 
 //Good SET parts
 ItemDisplay[(amu OR uar OR ci3 OR 7qr OR uth OR paf) SET !ID]: %MAP-84%%NL%%PURPLE%*%RED%*%DARK_GREEN%*%GREEN%*     %NAME%     *%DARK_GREEN%*%RED%*%PURPLE%*
@@ -321,6 +391,11 @@ ItemDisplay[(xml OR xlb OR xpl OR xap OR xld OR xrs OR gth OR aar OR BELT OR skp
 ItemDisplay[((7o7 OR 9yw OR 9fc OR 7bw OR 9kr OR amb OR 7sc OR 7mp OR 6sw OR 6l7 OR 8hx OR 8rx OR dgr OR 7dg OR 7bl OR 9ma OR 9wh OR 9gm OR 7s8 OR 7wc OR 9ws OR 6cs OR 7b7 OR 7gs OR 9sb) OR (ELT (WP5 OR WP6)) OR 9bw OR ywn OR 7cs OR 7wb OR 7sp) UNI !ID]: %PX-68%%NAME%
 //Sets
 ItemDisplay[((ARMOR OR WEAPON) (EXC OR ELT OR ci0 OR ba5) !(9vo OR xcl OR xrn)) SET !ID]: %PX-84%%NAME%
+
+//Catch-all UNI and Set
+ItemDisplay[UNI !ID]: %NAME%%MAP-A5% // Leave this uncommented to show and notify for ALL unique items
+ItemDisplay[SET !ID]: %NAME%%MAP-84% // Leave this uncommented to show and notify for ALL set items
+
 
 //Highlight all Sets and Uniques for low lvl characters
 ItemDisplay[UNI !ID CLVL<80]: %PX-68%%NAME%
@@ -336,6 +411,7 @@ ItemDisplay[WP13 ((TABSK25>2 AND SK118>1) OR (TABSK25>1 AND SK118>2) OR (CLSK3>1
 ItemDisplay[STAFF CHSK54>0]: %NAME%%NL%%RED%***   %GREEN%Teleport Charges%RED%   ***{%RED%***   %GREEN%Teleport Charges%RED%   ***%NL%%TAN%Note%WHITE%: Notice me, That's me:}
 ItemDisplay[WAND CHSK91>0]: %NAME%%NL%%RED%***   %GREEN%Lower Resist Charges%RED%   ***{%RED%***   %GREEN%Lower Resist Charges%RED%   ***%NL%%TAN%Note%WHITE%: Notice me, That's me:}
 ItemDisplay[WAND CHSK82>0]: %NAME%%NL%%RED%***   %GREEN%Life Tap Charges%RED%   ***{%RED%***   %GREEN%Life Tap Charges%RED%   ***%NL%%TAN%Note%WHITE%: Notice me, That's me:}
+
 
 //Circlets
 ItemDisplay[EQ7 (MAG OR RARE) !ID]: %NAME%
@@ -654,7 +730,7 @@ ItemDisplay[WEAPON NORM SET ID]: %NAME%{%GREEN%This Item %WHITE%+ %ORANGE%Ral %W
 ItemDisplay[WEAPON EXC SET ID]: %NAME%{%GREEN%This Item %WHITE%+ %ORANGE%Lum %WHITE%+ %ORANGE%Pul %WHITE%+ Perf %GREEN%O%NL%%TAN%Note%WHITE%: Upgrading Recipe:}
 
 //Always show me those items
-ItemDisplay[UNI OR SET OR RW OR CRAFT]: %NAME%%DOT-0D%
+ItemDisplay[UNI OR SET OR RW OR CRAFT OR RARE]: %NAME%%DOT-0D%
 
 //Show me every identified item
 ItemDisplay[(ARMOR OR WEAPON) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%%DOT-0D%
