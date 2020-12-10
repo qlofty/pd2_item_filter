@@ -1,10 +1,4 @@
-// Kryszard's PD2 Loot Filter ver 1.6.5 edited by qLofty 1.1
-//
-// twitch.tv/kryszard
-//
-// For Casual and EndGame Players
-//
-// Copy & Paste this code to your default.filter file in PD2 directory
+//qLofty Loot Filter 1.2
 
 //Gold
 ItemDisplay[GOLD<100 CLVL<18]:
@@ -140,10 +134,10 @@ ItemDisplay[gpy]: %YELLOW%+%WHITE%Perfect %YELLOW%Topaz%WHITE%%DOT-20% // Perfec
 ItemDisplay[gpys]: %YELLOW%+%WHITE%Perfect %YELLOW%Topaz x%QTY%%WHITE%%DOT-20%{%WHITE%Shields: Lightning Resist +40%%NL%Armor/Helms: 24% Better Chance of Getting Magic Items%NL%Weapons: Adds 1-40 lightning damage%NL%} // Stacked Perfect Topaz
 
 //Runes
-ItemDisplay[RUNE<15 CLVL>1]: %PX-62%%ORANGE%%RUNENAME% %GRAY%[%TAN%%RUNENUM%%GRAY%]%CONTINUE%
+ItemDisplay[RUNE<15 CLVL>0]: %PX-62%%YELLOW%* %ORANGE%%RUNENAME% Rune %GRAY%[%TAN%%RUNENUM%%GRAY%] x %WHITE%%QTY%%CONTINUE%
 ItemDisplay[RUNE=15 OR RUNE=16 OR RUNE=17 OR RUNE=18 OR RUNE=19]: %PX-62%%NL%%BLUE%|  %RUNENAME% %ORANGE%Rune %WHITE%[%BLUE%%RUNENUM%%WHITE%]%BLUE%  |%CONTINUE%
-ItemDisplay[RUNE>19 AND RUNE<26]: %DOT-62%%NL%%BLUE%+%RED%* %RUNENAME% %RED%Rune %WHITE%[%RED%%RUNENUM%%WHITE%]%RED% *%BLUE%+%CONTINUE%
-ItemDisplay[RUNE>25]: %BORDER-62%%NL%%GREEN%|%PURPLE%-%GREEN%| %RUNENAME% %PURPLE%Rune %WHITE%[%GREEN%%RUNENUM%%WHITE%]%GREEN% |%PURPLE%-%GREEN%|%CONTINUE%
+ItemDisplay[RUNE>19 AND RUNE<26]: %DOT-62%%NL%%BLUE%+%RED%*    %RUNENAME% %RED%Rune %WHITE%[%RED%%RUNENUM%%WHITE%]    %RED%*%BLUE%+%CONTINUE%
+ItemDisplay[RUNE>25]: %BORDER-62%%NL%%GREEN%|%PURPLE%-%GREEN%|       %RUNENAME% %PURPLE%Rune %WHITE%[%GREEN%%RUNENUM%%WHITE%]       %GREEN%|%PURPLE%-%GREEN%|%CONTINUE%
 
 ItemDisplay[r01]: %NAME%{%TAN%3 El + Key = Eld%NL%} // El Rune
 ItemDisplay[r01s]: %NAME%{%TAN%3 El + Key = Eld%NL%%NL%%WHITE%All: +1 Light Radius%NL%Shields: +15 Defense%NL%Armor/Helms: +15 Defense%NL%Weapons: +50 Attack Rating%NL%} // El Rune
@@ -358,8 +352,199 @@ ItemDisplay[jew MAG !ID]: %DOT-9A%%NL%%TAN%*%WHITE%*   %BLUE%%NAME%%WHITE%   *%T
 //Highlight Good Rare items
 ItemDisplay[(jew OR rin OR amu OR EQ7) RARE !ID]: %DOT-A8%%TAN%*%WHITE%*   %YELLOW%%NAME%%WHITE%   *%TAN%*
 
+
+//  									|--------------------------------|
+//										|								 |
+//										|								 |
+// 										|		  Uniques ITEMS			 |
+//										|								 |
+//										|								 |
+// 										|--------------------------------|
+//
+//							|-----------------|		GG or Noteworthy Weapons		|-----------------|
+// 													|-----BOW OR XBOW----|
+//Windforce
+ItemDisplay[6lw UNI !ID]: %BORDER-00%%MAP-84%%PURPLE%*%ORANGE%*%RED%*%WHITE%*       %GOLD%Windforce Bow!!       %WHITE%*%RED%*%ORANGE%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+//WIDOWMAKER
+ItemDisplay[6sw UNI !ID]: %BORDER-00%%MAP-84%%NL%*%ORANGE%* %GOLD%Widowmaker Bow!! %ORANGE%*
+//WITCHWILD STRING
+ItemDisplay[8s8 UNI !ID]: %BORDER-00%%MAP-84%%NL%%ORANGE%* %GOLD%Witchwild String Bow!! %ORANGE%*
+
+
+//Might Scepter-Possible Redeemer
+ItemDisplay[7sc UNI !ID]: %BORDER-00%%MAP-84%%PURPLE%*%ORANGE%*%RED%*%WHITE%*       %GOLD%%NAME%!!       %WHITE%*%RED%*%ORANGE%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//Eschuta's
+ItemDisplay[obc UNI !ID]: %BORDER-00%%MAP-84%%PURPLE%*%ORANGE%*%RED%*%WHITE%*       %GOLD%Eschuta's Temper!     %WHITE%*%RED%*%ORANGE%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//Death's Fathom
+ItemDisplay[obf UNI !ID]: %BORDER-00%%MAP-84%%PURPLE%*%ORANGE%*%RED%*%WHITE%*       %GOLD%Death's Fathom!     %WHITE%*%RED%*%ORANGE%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//The Grandfather
+ItemDisplay[7gd UNI !ID]: %BORDER-00%%MAP-84%%PURPLE%*%ORANGE%*%RED%*%WHITE%*       %GOLD%The Grandfather!     %WHITE%*%RED%*%ORANGE%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//The Gavel of Pain
+ItemDisplay[9gm UNI !ID]: %BORDER-00%%MAP-64%%RED%*%BLUE%*   %GOLD%The Gavel of Pain!  %BLUE%*%RED%*%NL% %RED%SLAM IT!
+
+
+//							|-----------------|		GG or Noteworthy Items		|-----------------|
+
+// 														|-----Armor----|
+//Templar Might or Tyraels Might
+ItemDisplay[uar UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%YELLOW%*%RED%*%BLUE%*  %GOLD%Templar %WHITE%or %GOLD%Tyraels Might!!  %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!
+
+//Dusk Shroud
+ItemDisplay[uui UNI !ID]: %BORDER-00%%MAP-64%%YELLOW%*%BLUE%*%RED%*    %GOLD%Ormus' Robes!!    %RED%*%BLUE%*%YELLOW%* %NL% %GREEN%TIDDIES
+
+//Skin of the Vipermagi
+ItemDisplay[xea UNI !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%*    %GOLD%Skin of the Vipermagi!    %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+
+//														|------Helms----|
+//Valkyrie Wing
+ItemDisplay[xhm UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%ORANGE%*%RED%*%WHITE%*       %GOLD%Valk Wing!!       %WHITE%*%RED%*%ORANGE%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//Nightwings Veil or Veil of Steel
+ItemDisplay[uhm UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%ORANGE%*%RED%*%WHITE%*       %GOLD%%NAME%!!     %WHITE%*%RED%*%ORANGE%*%PURPLE%*%NL%%GREEN%TIDDIES!!
+
+//Griffon's EYE
+ItemDisplay[ci3 UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%ORANGE%*%RED%*%WHITE%*       %GOLD%Griffon's EYE!!       %WHITE%*%RED%*%ORANGE%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//Crown of Ages
+ItemDisplay[urn UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%ORANGE%*%RED%*%WHITE%*       %GOLD%Crown of Ages!!       %WHITE%*%RED%*%ORANGE%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//SHAKO
+ItemDisplay[uap UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%ORANGE%*%RED%*%WHITE%*       %GOLD%%NAME%!!       %WHITE%*%RED%*%ORANGE%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//SHAKO
+ItemDisplay[drd UNI !ID]: %NL%%BORDER-00%%MAP-64%%PURPLE%|%ORANGE%*%WHITE%*   %GOLD%%NAME%!!  %WHITE%*%ORANGE%*%PURPLE%|
+
+//Horned Helm
+ItemDisplay[ba3 UNI !ID]: %%MAP-58%%RED%** %GOLD%Demonhorn's Edge!! %RED%**
+ItemDisplay[ba3 SET !ID]: %%MAP-58%%RED%** %GREEN% %NAME%!! %RED%**
+
+//														|------Belts----|
+//Arachnid Mesh
+ItemDisplay[ulc UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%YELLOW%*%RED%*%BLUE%*      %GOLD%Arachnid Mesh!      %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//Thungergod Vigor
+ItemDisplay[zhb UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%YELLOW%*%RED%*%BLUE%*      %GOLD%T Gods Belt!      %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//Arachnid Mesh
+ItemDisplay[uvc UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%YELLOW%*%RED%*%BLUE%*      %GOLD%Nosferatus Coil Belt!      %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!!
+
+//Razortail
+ItemDisplay[zvb UNI !ID]: %BORDER-00%%MAP-64%%YELLOW%*%RED%*%BLUE%*    %GOLD%Razortail Belt!    %BLUE%*%RED%*%YELLOW%*%NL%
+
+//Goldwrap
+ItemDisplay[zvb UNI !ID]: %BORDER-00%%MAP-64%%YELLOW%*%RED%*%BLUE%*    %GOLD%Goldwrap Belt!    %BLUE%*%RED%*%YELLOW%*%NL%
+
+
+// 										|-----------------|		SLAM Weapons	|-----------------|
+
+//Windhammer
+ItemDisplay[7m7 UNI !ID]: %BORDER-00%%MAP-64%%RED%*%BLUE%* %GOLD%Windhammer Maul %BLUE%*%RED%*%NL% %RED%SLAM IT!
+
+//Bonesnap Maul
+ItemDisplay[mau UNI !ID]: %BORDER-00%%MAP-64%%RED%o %GOLD%Bonesnap %NAME% %RED%o
+
+//Earthshifter  & The Cranium Basher
+ItemDisplay[7gm UNI !ID]: %BORDER-00%%MAP-64%%RED%o %GOLD%%NAME% %RED%o
+
+//Ogre Axe
+ItemDisplay[7o7 UNI !ID]: %BORDER-00%%MAP-64%%RED%*%BLUE%* %GOLD%Bonehew Axe! %BLUE%*%RED%*%NL% %RED%SLAM IT!
+
+//Scourge
+ItemDisplay[7fl UNI !ID]: %MAP-58%%NL% %RED%** %GOLD%Horizons Tornado or Stormlash Scourge! %RED%**
+
+//Legendary Mallet
+ItemDisplay[7wh UNI !ID]: %MAP-58%%GOLD%StoneCrusher/Schaefers Mallet!
+
+//Giant Axe
+//ItemDisplay[gix UNI !ID]: %DOT-64%%NL%%GOLD%Humongous Dropped!
+
+
+// 											|------------|  Charge Weapons	|------------|
+//Elegant Blade
+ItemDisplay[7sb UNI !ID]:  %RED%* BloodWarp Charges *%NL%%MAP-58%%GOLD%BloodMoon!
+ItemDisplay[(7sb UNI ID) CHSK367>0]: %NAME%%NL%%RED%***   %RED%Bloodwarp Charges%RED%   ***
+
+//Demon Limb
+ItemDisplay[7sp UNI !ID]: %MAP-58%%RED* %GOLD%Demon Limb! %NL% %RED%**Enchant Fire Charges**
+ItemDisplay[(7sp UNI ID) AND CHSK52>0]: %NAME%%NL%%RED%***   %GREEN%Enchant Fire Charges%RED%   ***
+
+//Military Axe
+ItemDisplay[9la UNI !ID]: %MAP-58%%GOLD%Warlords or Spellstell Axe!%NL% %GREEN%**Blink Charges!**
+ItemDisplay[(9la UNI ID) AND CHSK357>0]: %NAME%%NL%%RED%***   %GREEN%Blink Charges%RED%   ***
+
+//Naj's Puzzler
+ItemDisplay[6cs SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%* %GREEN%Naj's Puzzler!! %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%Blink Charges!
+ItemDisplay[(6cs SET ID) AND CHSK357>0]: %NAME%%NL%%RED%***   %RED%Blink Charges%RED%   ***
+
+//Death Mask
+//ItemDisplay[xsk UNI !ID]: %DOT-64%%NL%%GOLD%Blackhorns Face
+	
+// 										|--------------------------------|
+//										|								 |
+//										|								 |
+// 										|		 	 SET ITEMS			 |
+//										|								 |
+//										|								 |
+// 										|--------------------------------|
+
+//Winged Helm--Guillaume's Face
+ItemDisplay[xhm SET !ID]: %BORDER-00%%MAP-84%%RED%*%BLUE%*  %GREEN%Guillaume's Face!  %BLUE%*%RED%*%NL% %RED%SLAM IT!
+
+// Immortal Kings SET
+ItemDisplay[uar SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%*   %GREEN%IK Armor!!   %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!
+ItemDisplay[7m7 SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%*   %GREEN%IK Maul!!    %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %RED%SLAM IT!
+ItemDisplay[ba5 SET !ID]: %MAP-84%%TAN%o %GREEN%IK Helm!!
+ItemDisplay[zhb SET !ID]: %MAP-84%%TAN%o %GREEN%IK War Belt!!
+ItemDisplay[xhb SET !ID]: %MAP-84%%TAN%o %GREEN%IK Boots!!
+ItemDisplay[xhg SET !ID]: %MAP-84%%TAN%o %GREEN%IK Gauntlets!!
+
+// Aldur's Watchtower SET
+ItemDisplay[uar SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%* %GREEN%Aldur's Armor!! %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!
+ItemDisplay[uul SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%* %GREEN%Aldur's Helm! %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %RED%SLAM IT!
+ItemDisplay[9mt SET !ID]: %MAP-84%%TAN%o %GREEN%Aldur's Jagged Star
+ItemDisplay[xtb SET !ID]: %MAP-84%%TAN%o %GREEN%Aldur's Boots
+
+// Naj's Ancient Vestige
+//ItemDisplay[6cs SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%* %GREEN%Naj's Puzzler!! %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%Blink Charges! // In Charge Section
+ItemDisplay[ukt SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%* %GREEN%Naj's Armor! %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %RED%SLAM IT!
+ItemDisplay[ci0 SET !ID]: %MAP-84%%TAN%o %GREEN%Naj's Circlet!!
+
+// M'avina's Battle Hymm
+ItemDisplay[amc SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%*     %GREEN%M'avina's Bow!!     %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %RED%SLAM IT!
+ItemDisplay[ci3 SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%*     %GREEN%M'avina's Diadem!     %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %RED%SLAM IT!
+ItemDisplay[uld SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%*     %GREEN%M'avina's Embrace Armor!!     %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %RED%SLAM IT!
+ItemDisplay[xtg SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*     %GREEN%M'avina's Gauntlets!     %YELLOW%*%PURPLE%*%NL% %RED%SLAM IT!
+ItemDisplay[zvb SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*     %GREEN%M'avina's Belt!!    %YELLOW%*%PURPLE%*%NL% %RED%SLAM IT!
+
+// Tal Rasha's Wrappings
+ItemDisplay[uth SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%PURPLE%*%PURPLE%*     %GREEN%Tal Rasha Armor!!     %PURPLE%*%PURPLE%*%PURPLE%*%NL% %RED%TIDDIES!
+ItemDisplay[(xsk OR zmb OR oba) SET !ID]: %BORDER-00%%MAP-84%%NL%%PURPLE%*%PURPLE%*%PURPLE%*  %GREEN%Tal Rasha %NAME%!  %PURPLE%*%PURPLE%*%PURPLE%*
+
+// Trang-Oul's Avatar
+ItemDisplay[(uh9 OR ne9 OR xul OR xmg OR utc)  SET !ID]: %BORDER-00%%MAP-84%%WHITE%*%RED%*%WHITE%*    %GREEN%Trang-Oul's %NAME%!!    %WHITE%*%RED%*%WHITE%*%NL% %RED%SLAM IT!
+
+
+// 										|--------------------------------|
+//										|								 |
+// 										|		 	UNI & SET			 |
+//										|		  RINGS & Amulets		 |
+//										|								 |
+// 										|--------------------------------|
+//UNI Rings & Amulets
+ItemDisplay[rin UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%YELLOW%*%RED%*%BLUE%*   %GOLD%Unique Ring!!   %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!
+ItemDisplay[amu UNI !ID]: %BORDER-00%%MAP-64%%PURPLE%*%YELLOW%*%RED%*%BLUE%*   %GOLD%Unique Amulet!!   %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!
+
+//SET Rings and Amulets
+ItemDisplay[rin SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%*   %GREEN%Cathans Ring!!   %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!
+ItemDisplay[amu SET !ID]: %BORDER-00%%MAP-84%%PURPLE%*%YELLOW%*%RED%*%BLUE%*   %GREEN%Set Amulet!!   %BLUE%*%RED%*%YELLOW%*%PURPLE%*%NL% %GREEN%TIDDIES!
+
 //GG UNIQUES
-ItemDisplay[(rin OR amu OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%NL%%GREEN%TIDDIES!
+ItemDisplay[(amu OR rin OR uar OR ulc OR xea OR urn OR uap OR ci3 OR xtb OR uit OR 6lw OR 7gw OR 7gd OR obf OR ulm) UNI !ID]: %BORDER-68%%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %GOLD%%NAME%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%NL%%GREEN%TIDDIES!
 
 //OK UNIQUES
 //belts
@@ -393,7 +578,7 @@ ItemDisplay[((7o7 OR 9yw OR 9fc OR 7bw OR 9kr OR amb OR 7sc OR 7mp OR 6sw OR 6l7
 ItemDisplay[((ARMOR OR WEAPON) (EXC OR ELT OR ci0 OR ba5) !(9vo OR xcl OR xrn)) SET !ID]: %PX-84%%NAME%
 
 //Catch-all UNI and Set
-ItemDisplay[UNI !ID]: %NAME%%MAP-A5% // Leave this uncommented to show and notify for ALL unique items
+ItemDisplay[UNI !ID]: %NAME%%DOT-58%%PX-00% // Leave this uncommented to show and notify for ALL unique items
 ItemDisplay[SET !ID]: %NAME%%MAP-84% // Leave this uncommented to show and notify for ALL set items
 
 
@@ -411,6 +596,7 @@ ItemDisplay[WP13 ((TABSK25>2 AND SK118>1) OR (TABSK25>1 AND SK118>2) OR (CLSK3>1
 ItemDisplay[STAFF CHSK54>0]: %NAME%%NL%%RED%***   %GREEN%Teleport Charges%RED%   ***{%RED%***   %GREEN%Teleport Charges%RED%   ***%NL%%TAN%Note%WHITE%: Notice me, That's me:}
 ItemDisplay[WAND CHSK91>0]: %NAME%%NL%%RED%***   %GREEN%Lower Resist Charges%RED%   ***{%RED%***   %GREEN%Lower Resist Charges%RED%   ***%NL%%TAN%Note%WHITE%: Notice me, That's me:}
 ItemDisplay[WAND CHSK82>0]: %NAME%%NL%%RED%***   %GREEN%Life Tap Charges%RED%   ***{%RED%***   %GREEN%Life Tap Charges%RED%   ***%NL%%TAN%Note%WHITE%: Notice me, That's me:}
+
 
 
 //Circlets
