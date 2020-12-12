@@ -71,7 +71,7 @@ ItemDisplay[mp5]: %WHITE%*%BLUE% MP %WHITE%*
 
 ItemDisplay[rvs CLVL>80]:
 ItemDisplay[rvs CLVL<80]: %PURPLE%Half Rejuv
-ItemDisplay[rvl]: %DOT-62%%WHITE%* %PURPLE%FULL %WHITE%Rejuv %PURPLE% 
+ItemDisplay[rvl]: %DOT-62%%WHITE%* %PURPLE%FULL %WHITE%Rejuv %WHITE%*
 
 ItemDisplay[vps CLVL<15]: Stamina
 ItemDisplay[vps CLVL>14]:
