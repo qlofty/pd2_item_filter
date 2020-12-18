@@ -1,5 +1,5 @@
 // Kryszard's PD2 Loot Filter ver 1.9.0 edited by qLofty
-// Mixed with some of Wolfies loot filter
+//
 // twitch.tv/kryszard
 //
 // For Casual and EndGame Players
@@ -215,14 +215,14 @@ ItemDisplay[r33]: %NAME% // Zod Rune
 ItemDisplay[r33s]: %NAME%{%TAN%this bad boy can fit so many freaking els%NL%%ORANGE%Wolfie: %TAN%*slaps rune*%NL%%NL%%WHITE%All Sockets: Indestructible%NL%} // Stacked Zod Rune
 
 //All Charms
-ItemDisplay[MAG !ID ILVL>93 cm3]:  %DOT-9B%%NL%%PURPLE%**  %RED% REROLL %BLUE%%NAME% %PURPLE%**// iLvl 94 or higher grand charms for cube rerolling
-ItemDisplay[MAG !ID cm3]: %DOT-9B%%NL%%PURPLE%@  %BLUE%%NAME% %PURPLE%@
+ItemDisplay[MAG !ID ILVL>93 cm3]: %DOT-9B%%NL%%RED%REROLL %BLUE%%NAME%%ORANGE%i%ILVL%// iLvl 94 or higher grand charms for cube rerolling
 ItemDisplay[cm2 MAG !ID]: %DOT-9B%%NL%%TAN%@%BLUE% %NAME%%ORANGE% i%ILVL% %TAN%@
-ItemDisplay[cm1 MAG !ID]: %DOT-9B%%NL%%PURPLE%@  %BLUE%%NAME%%ORANGE% i%ILVL%  %PURPLE%@
+ItemDisplay[cm1 OR cm3 MAG !ID]: %DOT-9B%%NL%%PURPLE%@  %BLUE%%NAME%%ORANGE% i%ILVL%  %PURPLE%@
 ItemDisplay[cm1 UNI !ID]: %PX-64%%GOLD%ANNI SC BABEM!
 ItemDisplay[cm2 UNI !ID]: %PX-64%%GOLD%HELLFIRE TORCH BABEM!
 ItemDisplay[cm3 UNI !ID]: %PX-64%%GOLD%GHEEDS CHARM!
 ItemDisplay[(cm1 OR cm2 OR cm3) UNI !ID]: %PX-64%%NAME%
+ItemDisplay[MAG ID ILVL>93 cm3]: %DOT-9B%%NAME%%TAN% i%ILVL% {%WHITE%cube w/ 3 pGEMs for chance of +40%RED%life %PURPLE% Skiller%NL%%RED%Reroll GC%NL%%TAN%NOTE:}
 
 //Good Charms
 ItemDisplay[cm3 (MAXDMG>6 AND LIFE>0)]: %TAN%Max Dmg %RED%Life %BLUE%Grand Charm 
@@ -986,34 +986,8 @@ ItemDisplay[SHIELD MAG ID]: %NAME%{%GRAY%Blood%WHITE%: Perf %RED%O, %ORANGE%Ith,
 ItemDisplay[HELM MAG ID]: %NAME%{%GRAY%Caster%WHITE%: Perf %PURPLE%O, %ORANGE%Nef, %BLUE%Jewel%NL%%GRAY%Blood%WHITE%: Perf %RED%O, %ORANGE%Ral, %BLUE%Jewel%NL%%TAN%Note%WHITE%: Crafting Recipes:}
 ItemDisplay[CHEST MAG ID]: %NAME%{%GRAY%Hit Power%WHITE%: Perf %BLUE%O, %ORANGE%Nef, %BLUE%Jewel%NL%%GRAY%Blood%WHITE%: Perf %RED%O, %ORANGE%Thul, %BLUE%Jewel%NL%%TAN%Note%WHITE%: Crafting Recipes:}
 ItemDisplay[WEAPON MAG ID]: %NAME%{%GRAY%Blood%WHITE%: Perf %RED%O, %ORANGE%Ort, %BLUE%Jewel%NL%%GRAY%Caster%WHITE%: Perf %PURPLE%O, %ORANGE%Tir, %BLUE%Jewel%NL%%TAN%Note%WHITE%: Crafting Recipes:}
-//ItemDisplay[amu MAG]: %NAME% %ORANGE%i%ILVL%{%GRAY%Blood%WHITE%: Perf %RED%O, %ORANGE%Amn, %BLUE%Jewel%NL%%GRAY%Caster%WHITE%: Perf %PURPLE%O, %ORANGE%Ral, %BLUE%Jewel%NL%%TAN%Note%WHITE%: Crafting Recipes:}
-//ItemDisplay[rin MAG]: %NAME% %ORANGE%i%ILVL%{%GRAY%Caster%WHITE%: Perf %PURPLE%O, %ORANGE%Amn, %BLUE%Jewel%NL%%GRAY%Blood%WHITE%: Perf %RED%O, %ORANGE%Sol, %BLUE%Jewel%NL%%TAN%Note%WHITE%: Crafting Recipes:}
-
-//Crafting Rings
-ItemDisplay[MAG rin ILVL=86]: %NAME% %ORANGE%[C]%BLUE%{%TAN%Craft at character level 84+}
-ItemDisplay[MAG rin ILVL=87]: %NAME% %ORANGE%[C]%BLUE%{%TAN%Craft at character level 84+}
-ItemDisplay[MAG rin ILVL=88]: %NAME% %ORANGE%[C]%BLUE%{%TAN%Craft at character level 82+}
-ItemDisplay[MAG rin ILVL=89]: %NAME% %ORANGE%[C]%BLUE%{%TAN%Craft at character level 82+}
-ItemDisplay[MAG rin ILVL=90]: %NAME% %ORANGE%[C]%BLUE%{%TAN%Craft at character level 80+}
-ItemDisplay[MAG rin ILVL=91]: %NAME% %ORANGE%[C]%BLUE%{%TAN%Craft at character level 78+}
-ItemDisplay[MAG rin ILVL=92]: %NAME% %ORANGE%[C]%BLUE%{%TAN%Craft at character level 78+}
-ItemDisplay[MAG rin ILVL=93]: %NAME% %ORANGE%[C]%BLUE%{%TAN%Craft at character level 76+}
-ItemDisplay[MAG rin ILVL=94]: %NAME% %ORANGE%[C]%BLUE%{%TAN%Craft at character level 76+}
-ItemDisplay[MAG rin ILVL>94]: %NAME% %ORANGE%[C]%BLUE%{%TAN%Craft at character level 74+}
-
-//Crafting Amulets
-ItemDisplay[MAG amu ILVL=88]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 92+}
-ItemDisplay[MAG amu ILVL=89]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 92+}
-ItemDisplay[MAG amu ILVL=90]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 90+}
-ItemDisplay[MAG amu ILVL=91]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 90+}
-ItemDisplay[MAG amu ILVL=92]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 88+}
-ItemDisplay[MAG amu ILVL=93]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 88+}
-ItemDisplay[MAG amu ILVL=94]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 86+}
-ItemDisplay[MAG amu ILVL=95]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 86+}
-ItemDisplay[MAG amu ILVL=96]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 84+}
-ItemDisplay[MAG amu ILVL=97]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 84+}
-ItemDisplay[MAG amu ILVL=98]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 82+}
-ItemDisplay[MAG amu ILVL=99]: %NAME% %ORANGE%[C]%BLUE%%DOT-68%{%TAN%Craft at character level 82+}
+ItemDisplay[amu MAG]: %NAME% %ORANGE%i%ILVL%{%GRAY%Blood%WHITE%: Perf %RED%O, %ORANGE%Amn, %BLUE%Jewel%NL%%GRAY%Caster%WHITE%: Perf %PURPLE%O, %ORANGE%Ral, %BLUE%Jewel%NL%%TAN%Note%WHITE%: Crafting Recipes:}
+ItemDisplay[rin MAG]: %NAME% %ORANGE%i%ILVL%{%GRAY%Caster%WHITE%: Perf %PURPLE%O, %ORANGE%Amn, %BLUE%Jewel%NL%%GRAY%Blood%WHITE%: Perf %RED%O, %ORANGE%Sol, %BLUE%Jewel%NL%%TAN%Note%WHITE%: Crafting Recipes:}
 
 //Highlight RW Bases with high DEF
 ItemDisplay[xtp !SOCK=1 !ETH !INF NMAG DEF>249]: %DOT-D6%%NAME%%CONTINUE%
@@ -1382,10 +1356,10 @@ ItemDisplay[WEAPON NORM SET ID]: %NAME%{%GREEN%This Item %WHITE%+ %ORANGE%Ral %W
 ItemDisplay[WEAPON EXC SET ID]: %NAME%{%GREEN%This Item %WHITE%+ %ORANGE%Lum %WHITE%+ %ORANGE%Pul %WHITE%+ Perf %GREEN%O%NL%%TAN%Note%WHITE%: Upgrading Recipe:}
 
 //Always show me those items
-ItemDisplay[UNI OR SET OR RW OR CRAFT]: %NAME%
+ItemDisplay[UNI OR SET OR RW OR CRAFT]: %DOT-60%%NAME%
 
 //Show me every identified item
-ItemDisplay[(ARMOR OR WEAPON) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%
+ItemDisplay[(ARMOR OR WEAPON) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %DOT-60%%NAME%
 
 //Potentially expensive (Woth some GOLD) items
 ItemDisplay[(7tk OR 7bk OR 7ta) (MAG OR RARE OR NMAG) !ETH !INF]: %NAME% %GRAY%(%TAN%$%WHITE%%PRICE%%GRAY%)
